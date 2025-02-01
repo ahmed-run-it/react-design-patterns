@@ -4,6 +4,7 @@ import { RegularList } from "./components/lists/RegularList";
 import { authors } from "./data/authors";
 import { SmallListItems } from "./components/authors/smallListItems";
 import { LageListItems } from "./components/authors/largeListItems";
+import  ContactForm  from "./components/form/form"
 
 const LeftSideComp=({title})=>{
   return <h1 style={{
@@ -22,6 +23,7 @@ const RightSideComp=({title})=>{
 function App() {
   return (
     <>
+    <ContactForm />
    <SplitScreen  leftWidth={1} rightWidth={3}>
      <LeftSideComp title="left" />
      <RightSideComp title="right"/>
